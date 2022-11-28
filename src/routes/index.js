@@ -1,13 +1,13 @@
 /* eslint-disable no-unused-vars */
 import { createBrowserRouter } from "react-router-dom";
 
-import AddUser from "../pages/admin/addUser/AddUser";
-import UserList from "../pages/admin/userList/UserList";
-import User from "../pages/admin/user/User";
+// import AddUser from "../pages/admin/addUser/AddUser";
+// import UserList from "../pages/admin/userList/UserList";
+// import User from "../pages/admin/user/User";
 
-import Movie from "../pages/admin/movie/Movie";
-import MovieList from "../pages/admin/movieList/MovieList";
-import AddMovie from "../pages/admin/addMovie/AddMovie";
+// import Movie from "../pages/admin/movie/Movie";
+// import MovieList from "../pages/admin/movieList/MovieList";
+// import AddMovie from "../pages/admin/addMovie/AddMovie";
 
 
 import Login from "../pages/login/Login";
@@ -49,30 +49,30 @@ const router = createBrowserRouter([
         index: true,
         element: <HomeAdmin />,
       },
-      {
-        path: "users",
-        element: <UserList />
-      },
-      {
-        path: "add-user",
-        element: <AddUser />,
-      },
-      {
-        path: "user/:userId",
-        element: <User />
-      },
-      {
-        path: "movies",
-        element: <MovieList />
-      },
-      {
-        path: "movie/:id",
-        element: <Movie />,
-      },
-      {
-        path: "add-movie",
-        element: <AddMovie />
-      },
+      // {
+      //   path: "users",
+      //   element: <UserList />
+      // },
+      // {
+      //   path: "add-user",
+      //   element: <AddUser />,
+      // },
+      // {
+      //   path: "user/:userId",
+      //   element: <User />
+      // },
+      // {
+      //   path: "movies",
+      //   element: <MovieList />
+      // },
+      // {
+      //   path: "movie/:id",
+      //   element: <Movie />,
+      // },
+      // {
+      //   path: "add-movie",
+      //   element: <AddMovie />
+      // },
       // {
       //   path: "lists",
       //   element: <ProductList />
