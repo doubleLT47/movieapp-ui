@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+@mixin sp {
+    @media screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+.payment {
+    * {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    &__wrapper {
+        width: min(100%, 800px);
+        margin-left: auto;
+        margin-right: auto;
+        padding: 16px;
+    }
+
+    &__inner {
+        margin-top: 254x;
+        display: flex;
+
+        @include sp {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__left {
+        padding: 16px;
+        background-color: rgb(99, 99, 234);
+        max-width: 300px;
+        color: #fff;
+        position: relative;
+        padding-bottom: 60px;
+
+        @include sp {
+            max-width: 1000px;
+            margin-top: 22px;
+        }
+
+        .countdount {
+            font-size: 16px;
+            margin-bottom: 23px;
+
+            span {
+                display: block;
+                font-size: 23px;
+                font-weight: bold;
+            }
+        }
+
+        .account__name {
+            font-size: 14px;
+            font-weight: normal;
+
+            span {
+                font-size: 18px;
+                font-weight: bold;
+                display: block;
+            }
+        }
+
+        .info {
+            margin-top: 16px;
+            position: relative;
+
+            span {
+                display: block;
+            }
+        }
+
+        .back {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 12px 10px;
+            background-color: rgb(215, 80, 80);
+            font-size: 12px;
+            font-weight: normal;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.9;
+            }
+        }
+    }
+
+    &__right {
+        padding: 16px;
+
+        @include sp {
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        .img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 100%;
+                max-width: 300px;
+                object-fit: cover;
+            }
+        }
+
+        .money {
+            text-align: center;
+            margin-top: 12px;
+
+            span {
+                font-weight: bold;
+                font-size: 18px;
+            }
+        }
+
+        .note {
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .content {
+            background-color: rgb(225, 235, 34);
+            font-size: 16px;
+            text-align: center;
+            margin-top: 20px;
+            padding: 12px 20px;
+            position: relative;
+            span {
+                display: block;
+                font-weight: bold;
+                font-size: 25px;
+            }
+        }
+
+        .copy {
+          font-size: 19px;
+          position: absolute;
+          top: 6px;
+          right: 6px;
+          cursor: pointer;
+          &:hover {
+            opacity: 0.5;
+          }
+          i {
+            font-size: 11px;
+            color: #fff;
+            background-color: #333;
+            padding: 6px 12px;
+            text-transform: unset;
+          }
+        }
+
+    }
+}

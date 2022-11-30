@@ -18,6 +18,7 @@ import HomeAdmin from "../pages/admin/home/HomeAdmin";
 import Watch from "../pages/watch/Watch";
 import Register from "../pages/register/Register";
 import Admin from "../pages/admin/Admin";
+import Payment from "../pages/payment/Payment";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,14 @@ const router = createBrowserRouter([
     element: (
       // <CheckLogin>
       <Register />
+      // </CheckLogin>
+    ),
+  },
+  {
+    path: "payment",
+    element: (
+      // <CheckLogin>
+      <Payment />
       // </CheckLogin>
     ),
   },
